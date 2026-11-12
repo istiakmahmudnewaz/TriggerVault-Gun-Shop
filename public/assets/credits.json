@@ -1,0 +1,198 @@
+[
+    {
+        "id":  1,
+        "file":  "Glock19-1.jpg",
+        "artist":  "Shotgun",
+        "license":  "CC BY-SA 3.0",
+        "page":  "https://commons.wikimedia.org/wiki/File:Glock19-1.jpg"
+    },
+    {
+        "id":  2,
+        "file":  "SIG Sauer P320 compact pistol.jpg",
+        "artist":  "Rouven74",
+        "license":  "CC BY-SA 4.0",
+        "page":  "https://commons.wikimedia.org/wiki/File:SIG_Sauer_P320_compact_pistol.jpg"
+    },
+    {
+        "id":  3,
+        "file":  "Beretta-92FS.jpg",
+        "artist":  "Picanox",
+        "license":  "CC BY-SA 4.0",
+        "page":  "https://commons.wikimedia.org/wiki/File:Beretta-92FS.jpg"
+    },
+    {
+        "id":  4,
+        "file":  "Colt M1911 noBG.jpg",
+        "artist":  "Askild Antonsen",
+        "license":  "CC BY-SA 3.0",
+        "page":  "https://commons.wikimedia.org/wiki/File:Colt_M1911_noBG.jpg"
+    },
+    {
+        "id":  5,
+        "file":  "CZ 75 SP-01.jpg",
+        "artist":  "Twiek",
+        "license":  "CC BY-SA 3.0",
+        "page":  "https://commons.wikimedia.org/wiki/File:CZ_75_SP-01.jpg"
+    },
+    {
+        "id":  6,
+        "file":  "S\u0026W M\u0026P9 Shield Performance Center version. (cropped).jpg",
+        "artist":  "Shistorybuff",
+        "license":  "CC BY-SA 4.0",
+        "page":  "https://commons.wikimedia.org/wiki/File:S%26W_M%26P9_Shield_Performance_Center_version._(cropped).jpg"
+    },
+    {
+        "id":  7,
+        "file":  "Colt Python (55021607401).jpg",
+        "artist":  "Mitch Barrie",
+        "license":  "CC BY-SA 4.0",
+        "page":  "https://commons.wikimedia.org/wiki/File:Colt_Python_(55021607401).jpg"
+    },
+    {
+        "id":  8,
+        "file":  "Smith and Wesson 686.jpg",
+        "artist":  "U.S. Bureau of Alcohol, Tobacco, Firearms and Explosives",
+        "license":  "Public domain",
+        "page":  "https://commons.wikimedia.org/wiki/File:Smith_and_Wesson_686.jpg"
+    },
+    {
+        "id":  9,
+        "file":  "Ruger GP100 .357 Stainless.jpg",
+        "artist":  "Gordon Gartrell",
+        "license":  "CC BY-SA 2.0",
+        "page":  "https://commons.wikimedia.org/wiki/File:Ruger_GP100_.357_Stainless.jpg"
+    },
+    {
+        "id":  10,
+        "file":  "Taurus Judge.jpg",
+        "artist":  "Dennis Chin",
+        "license":  "CC BY-SA 3.0",
+        "page":  "https://commons.wikimedia.org/wiki/File:Taurus_Judge.jpg"
+    },
+    {
+        "id":  11,
+        "file":  "AR-15 Sporter SP1 Carbine.JPG",
+        "artist":  "M62",
+        "license":  "CC BY-SA 3.0",
+        "page":  "https://commons.wikimedia.org/wiki/File:AR-15_Sporter_SP1_Carbine.JPG"
+    },
+    {
+        "id":  12,
+        "file":  "AK-47 assault rifle.jpg",
+        "artist":  "Ickybicky at en.wikipedia",
+        "license":  "Public domain",
+        "page":  "https://commons.wikimedia.org/wiki/File:AK-47_assault_rifle.jpg"
+    },
+    {
+        "id":  13,
+        "file":  "Ruger 10-22 Semiautomatic Rimfire Carbine-NMAH-AHB2015q116607.jpg",
+        "artist":  "The Smithsonian Institution",
+        "license":  "Public domain",
+        "page":  "https://commons.wikimedia.org/wiki/File:Ruger_10-22_Semiautomatic_Rimfire_Carbine-NMAH-AHB2015q116607.jpg"
+    },
+    {
+        "id":  14,
+        "file":  "SA M1A NM.jpg",
+        "artist":  "Michael Sullivan",
+        "license":  "Public domain",
+        "page":  "https://commons.wikimedia.org/wiki/File:SA_M1A_NM.jpg"
+    },
+    {
+        "id":  15,
+        "file":  "Winchester Model 70 Classic Featherweight .300 WSM.jpg",
+        "artist":  "Efeesh",
+        "license":  "CC BY 4.0",
+        "page":  "https://commons.wikimedia.org/wiki/File:Winchester_Model_70_Classic_Featherweight_.300_WSM.jpg"
+    },
+    {
+        "id":  16,
+        "file":  "Marlin Model 1894 Classic .357 Magnum.jpg",
+        "artist":  "Elshad",
+        "license":  "CC BY 4.0",
+        "page":  "https://commons.wikimedia.org/wiki/File:Marlin_Model_1894_Classic_.357_Magnum.jpg"
+    },
+    {
+        "id":  17,
+        "file":  "Remington 870 Wingmaster (55416542561).jpg",
+        "artist":  "Mitch Barrie",
+        "license":  "CC BY-SA 4.0",
+        "page":  "https://commons.wikimedia.org/wiki/File:Remington_870_Wingmaster_(55416542561).jpg"
+    },
+    {
+        "id":  18,
+        "file":  "Mossberg shotguns.jpg",
+        "artist":  "Jeff Gunn",
+        "license":  "CC BY 2.0",
+        "page":  "https://commons.wikimedia.org/wiki/File:Mossberg_shotguns.jpg"
+    },
+    {
+        "id":  19,
+        "file":  "Benelli M4 Combat Shotgun LAND-2010-104 DSC 5656.jpg",
+        "artist":  "Richard Watt",
+        "license":  "OGL 3",
+        "page":  "https://commons.wikimedia.org/wiki/File:Benelli_M4_Combat_Shotgun_LAND-2010-104_DSC_5656.jpg"
+    },
+    {
+        "id":  20,
+        "file":  "Beretta-A400-Xplor-Action.jpg",
+        "artist":  "Picanox",
+        "license":  "CC BY-SA 4.0",
+        "page":  "https://commons.wikimedia.org/wiki/File:Beretta-A400-Xplor-Action.jpg"
+    },
+    {
+        "id":  21,
+        "file":  "Heckler \u0026 Koch MP5.jpg",
+        "artist":  "Samuli Silvennoinen",
+        "license":  "CC BY-SA 3.0",
+        "page":  "https://commons.wikimedia.org/wiki/File:Heckler_%26_Koch_MP5.jpg"
+    },
+    {
+        "id":  22,
+        "file":  "CZ Scorpion EVO III.jpg",
+        "artist":  "Nowork114",
+        "license":  "CC BY-SA 3.0",
+        "page":  "https://commons.wikimedia.org/wiki/File:CZ_Scorpion_EVO_III.jpg"
+    },
+    {
+        "id":  23,
+        "file":  "B\u0026T APC 9 K side profile.jpg",
+        "artist":  "PEO Soldier",
+        "license":  "Public domain",
+        "page":  "https://commons.wikimedia.org/wiki/File:B%26T_APC_9_K_side_profile.jpg"
+    },
+    {
+        "id":  24,
+        "file":  "UZI Submachine Gun (7414624230).jpg",
+        "artist":  "US Air Force from USA",
+        "license":  "Public domain",
+        "page":  "https://commons.wikimedia.org/wiki/File:UZI_Submachine_Gun_(7414624230).jpg"
+    },
+    {
+        "id":  25,
+        "file":  "Barrett-M82-latrun-exhibition-1.jpg",
+        "artist":  "User:Bukvoed",
+        "license":  "CC BY 2.5",
+        "page":  "https://commons.wikimedia.org/wiki/File:Barrett-M82-latrun-exhibition-1.jpg"
+    },
+    {
+        "id":  26,
+        "file":  "Remington-700-SPS.jpg",
+        "artist":  "Picanox",
+        "license":  "CC BY-SA 4.0",
+        "page":  "https://commons.wikimedia.org/wiki/File:Remington-700-SPS.jpg"
+    },
+    {
+        "id":  27,
+        "file":  "AWM-338-white.jpg",
+        "artist":  "Source: Vitaly V. KuzminDerivative: User:MathKnight",
+        "license":  "CC BY-SA 4.0",
+        "page":  "https://commons.wikimedia.org/wiki/File:AWM-338-white.jpg"
+    },
+    {
+        "id":  28,
+        "file":  "Savage 110 .30-06 Bolt.JPG",
+        "artist":  "Clay Garland",
+        "license":  "Public domain",
+        "page":  "https://commons.wikimedia.org/wiki/File:Savage_110_.30-06_Bolt.JPG"
+    }
+]

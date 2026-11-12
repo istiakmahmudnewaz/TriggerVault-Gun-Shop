@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TriggerVault | Gun Shop</title>
+  <meta name="description" content="TriggerVault - pistols, revolvers, rifles, shotguns, SMGs and sniper rifles with prices and customer ratings." />
+  <script src="boot.js" data-age="1"></script>
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Age verification gate -->
+  <div class="age-gate" id="ageGate" role="dialog" aria-modal="true" aria-labelledby="ageTitle">
+    <div class="age-box">
+      <div class="age-logo">Trigger<span>Vault</span></div>
+
+      <div id="ageAsk">
+        <div class="age-badge">18+</div>
+        <h2 id="ageTitle">Age Verification Required</h2>
+        <p>This website contains information about firearms and is intended for adults only. You must be at least <b>18 years old</b> to enter.</p>
+        <p class="age-q">Are you 18 years of age or older?</p>
+        <div class="age-actions">
+          <button class="btn btn-primary" id="ageYes">Yes, I am 18 or older</button>
+          <button class="btn btn-ghost" id="ageNo">No, I am under 18</button>
+        </div>
+        <small>By entering, you confirm that you are of legal age and agree to follow all local firearm laws and regulations.</small>
+      </div>
+
+      <div id="ageDenied" hidden>
+        <div class="age-badge denied">&#10005;</div>
+        <h2>Access Denied</h2>
+        <p>Sorry, you must be at least 18 years old to view this website. Please come back when you are of legal age.</p>
+        <div class="age-actions">
+          <button class="btn btn-ghost" id="ageBack">I made a mistake, go back</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container nav">
+      <a href="#home" class="logo">Trigger<span>Vault</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#top-rated">Top Rated</a>
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeBtn" aria-label="Toggle day/night mode"></button>
+        <button class="cart-btn" id="cartBtn" aria-label="Open cart">Cart <span class="cart-count" id="cartCount">0</span></button>
+        <div class="user-menu" id="userMenu"></div>
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="Menu">&#9776;</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <p class="eyebrow">Licensed Dealer &bull; Since 1998</p>
+      <h1>Every Kind of <span>Firearm.</span><br />One Trusted Armory.</h1>
+      <p class="hero-sub">Pistols, revolvers, rifles, shotguns, SMGs and sniper rifles. Clear prices and honest customer ratings so you know which gun is best.</p>
+      <div class="hero-actions">
+        <a href="#shop" class="btn btn-primary">Browse Collection</a>
+        <a href="#top-rated" class="btn btn-ghost">See Top Rated</a>
+      </div>
+      <ul class="stats">
+        <li><strong id="statCount">0</strong><span>Guns Listed</span></li>
+        <li><strong>6</strong><span>Categories</span></li>
+        <li><strong id="statRating">0</strong><span>Avg. Rating</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="top-rated">
+    <div class="container">
+      <div class="section-head">
+        <h2>Top Rated <span>Guns</span></h2>
+        <p>Highest rated by our customers.</p>
+      </div>
+      <div class="grid" id="topGrid"></div>
+    </div>
+  </section>
+
+  <section class="section alt" id="shop">
+    <div class="container">
+      <div class="section-head">
+        <h2>Full <span>Collection</span></h2>
+        <p>Filter by type, search by name, sort by price or rating.</p>
+      </div>
+      <div class="toolbar">
+        <input type="search" id="search" placeholder="Search gun name, brand or caliber..." />
+        <select id="sort">
+          <option value="featured">Sort: Featured</option>
+          <option value="rating-desc">Rating: High to Low</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+          <option value="name">Name: A to Z</option>
+        </select>
+      </div>
+      <div class="filters" id="filters"></div>
+      <div class="grid" id="grid"></div>
+      <p class="empty" id="empty" hidden>No guns found. Try a different search.</p>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="container about">
+      <div>
+        <h2>Why <span>TriggerVault?</span></h2>
+        <p>We stock firearms for sport shooting, hunting, collecting and licensed personal protection. Every listing shows an upfront price and a rating based on accuracy, reliability and value.</p>
+      </div>
+      <ul class="features">
+        <li><b>Genuine Products</b> Authentic firearms from trusted manufacturers.</li>
+        <li><b>Rated by Buyers</b> Registered customers rate each gun so you can pick the best one.</li>
+        <li><b>Licensed Sales Only</b> Valid license and background check required.</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="legal">Legal Notice: Firearms are sold only to licensed adults (18+/21+ as required by law) after ID verification and a background check. Always follow local laws, store securely and practice safe handling.</p>
+      <p class="copy">&copy; <span id="year"></span> TriggerVault.</p>
+      <p class="copy dev">Designed &amp; Developed by <a href="https://istiakmahmudnewaz.vercel.app/" target="_blank" rel="noopener">Istiak Mahmud Newaz</a></p>
+    </div>
+  </footer>
+
+  <!-- Cart drawer -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="drawer" aria-label="Shopping cart">
+    <div class="drawer-head"><h3>Your Cart</h3><button id="closeCart" aria-label="Close cart">&times;</button></div>
+    <div class="drawer-body" id="cartItems"></div>
+    <div class="drawer-foot">
+      <div class="total"><span>Total</span><strong id="cartTotal">$0</strong></div>
+      <button class="btn btn-primary full" id="checkout">Checkout</button>
+      <small>Final purchase requires license verification.</small>
+    </div>
+  </aside>
+
+  <!-- Login / Register modal -->
+  <div class="modal-wrap" id="authModal">
+    <div class="modal">
+      <button class="modal-close" data-close>&times;</button>
+      <h3 id="authTitle">Welcome</h3>
+      <p class="sub">Sign in to order guns and rate your favorites.</p>
+      <div class="tabs">
+        <button class="active" data-tab="login">Login</button>
+        <button data-tab="register">Register</button>
+      </div>
+      <form class="form" id="loginForm">
+        <label>Email<input type="email" name="email" required autocomplete="email" /></label>
+        <label>Password<input type="password" name="password" required autocomplete="current-password" /></label>
+        <p class="error" id="loginError"></p>
+        <button class="btn btn-primary full" type="submit">Login</button>
+      </form>
+      <form class="form" id="registerForm" hidden>
+        <label>Full Name<input type="text" name="name" required minlength="2" autocomplete="name" /></label>
+        <label>Email<input type="email" name="email" required autocomplete="email" /></label>
+        <label>Password (min 8 characters)<input type="password" name="password" required minlength="8" maxlength="72" autocomplete="new-password" /></label>
+        <label>Confirm Password<input type="password" name="confirm" required minlength="8" maxlength="72" autocomplete="new-password" /></label>
+        <label class="check"><input type="checkbox" name="age" required /> I confirm I am of legal age to buy firearms in my area.</label>
+        <p class="error" id="registerError"></p>
+        <button class="btn btn-primary full" type="submit">Create Account</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Product detail modal -->
+  <div class="modal-wrap" id="detailModal">
+    <div class="modal wide">
+      <button class="modal-close" data-close>&times;</button>
+      <div id="detailBody"></div>
+    </div>
+  </div>
+
+  <!-- Checkout modal -->
+  <div class="modal-wrap" id="checkoutModal">
+    <div class="modal">
+      <button class="modal-close" data-close>&times;</button>
+      <h3>Checkout</h3>
+      <p class="sub">Your order will be reviewed and approved after license verification.</p>
+      <form class="form" id="checkoutForm">
+        <label>Phone<input type="tel" name="phone" required /></label>
+        <label>Delivery / Pickup Address<textarea name="address" rows="2" required></textarea></label>
+        <label>Firearm License Number<input type="text" name="license" required /></label>
+        <label>Note (optional)<input type="text" name="note" /></label>
+        <p class="error" id="checkoutError"></p>
+        <div class="total"><span>Total</span><strong id="checkoutTotal"></strong></div>
+        <button class="btn btn-primary full" type="submit">Place Order</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- My orders modal -->
+  <div class="modal-wrap" id="ordersModal">
+    <div class="modal wide">
+      <button class="modal-close" data-close>&times;</button>
+      <h3>My Orders</h3>
+      <p class="sub">Track the status of your orders.</p>
+      <div id="ordersBody"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="common.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+

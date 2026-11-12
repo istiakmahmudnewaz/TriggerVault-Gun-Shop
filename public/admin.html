@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Panel | TriggerVault</title>
+  <meta name="robots" content="noindex" />
+  <script src="boot.js"></script>
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+
+  <!-- Admin login gate -->
+  <main class="gate" id="gate" hidden>
+    <div class="modal gate-box">
+      <a href="index.html" class="logo">Trigger<span>Vault</span> <small>ADMIN</small></a>
+      <p class="sub" id="gateMsg">Sign in with an admin account to continue.</p>
+      <form class="form" id="adminLoginForm">
+        <label>Email<input type="email" name="email" required autocomplete="email" /></label>
+        <label>Password<input type="password" name="password" required autocomplete="current-password" /></label>
+        <p class="error" id="gateError"></p>
+        <button class="btn btn-primary full" type="submit">Login</button>
+        <a class="hint" href="index.html">&larr; Back to shop</a>
+      </form>
+    </div>
+  </main>
+
+  <!-- Admin app -->
+  <div class="app" id="app" hidden>
+    <aside class="sidebar" id="sidebar">
+      <a href="index.html" class="logo">Trigger<span>Vault</span> <small>ADMIN</small></a>
+      <nav class="side-nav" id="sideNav">
+        <button data-view="dashboard" class="active">Dashboard</button>
+        <button data-view="products">Products</button>
+        <button data-view="orders">Orders <span class="pill" id="pendingPill" hidden>0</span></button>
+        <button data-view="users">Users</button>
+      </nav>
+      <div class="side-foot">
+        <a class="btn btn-ghost btn-sm full" href="index.html">View Shop</a>
+        <button class="btn btn-ghost btn-sm full" id="changePwBtn">Change Password</button>
+        <button class="btn btn-danger btn-sm full" id="logoutBtn">Logout</button>
+      </div>
+    </aside>
+
+    <section class="main">
+      <header class="topbar">
+        <button class="icon-btn side-toggle" id="sideToggle" aria-label="Menu">&#9776;</button>
+        <h1 id="viewTitle">Dashboard</h1>
+        <div class="topbar-right">
+          <span class="who" id="whoami"></span>
+          <button class="icon-btn" id="themeBtn" aria-label="Toggle day/night mode"></button>
+        </div>
+      </header>
+      <div class="content" id="content"></div>
+    </section>
+  </div>
+
+  <!-- Product modal -->
+  <div class="modal-wrap" id="productModal">
+    <div class="modal wide">
+      <button class="modal-close" data-close>&times;</button>
+      <h3 id="productModalTitle">Add Gun</h3>
+      <p class="sub">Fill in the details. To add a new photo, use the upload field (JPEG, PNG or WebP).</p>
+      <form class="form" id="productForm">
+        <div class="form-grid">
+          <label>Name<input name="name" required /></label>
+          <label>Brand<input name="brand" required /></label>
+          <label>Category
+            <select name="cat" required></select>
+          </label>
+          <label>Caliber<input name="caliber" required /></label>
+          <label>Price (USD)<input type="number" name="price" min="0" step="1" required /></label>
+          <label>Stock<input type="number" name="stock" min="0" step="1" required /></label>
+          <label>Rating (0 - 5)<input type="number" name="rating" min="0" max="5" step="0.1" required /></label>
+          <label>Number of reviews<input type="number" name="reviews" min="0" step="1" required /></label>
+        </div>
+        <label>Description<textarea name="desc" rows="2"></textarea></label>
+        <div class="form-grid">
+          <label>Image path (optional)<input name="image" placeholder="assets/guns/1.jpg" /></label>
+          <label>...or upload a photo<input type="file" id="imageFile" accept="image/*" /></label>
+        </div>
+        <div class="preview" id="imagePreview"></div>
+        <p class="error" id="productError"></p>
+        <div class="form-actions">
+          <button type="button" class="btn btn-ghost" data-close>Cancel</button>
+          <button type="submit" class="btn btn-primary">Save Gun</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Change password modal -->
+  <div class="modal-wrap" id="pwModal">
+    <div class="modal">
+      <button class="modal-close" data-close>&times;</button>
+      <h3>Change Password</h3>
+      <p class="sub">Use at least 10 characters. Your other logged-in devices will be signed out.</p>
+      <form class="form" id="pwForm">
+        <label>Current Password<input type="password" name="current" required autocomplete="current-password" /></label>
+        <label>New Password<input type="password" name="next" required minlength="10" maxlength="72" autocomplete="new-password" /></label>
+        <label>Confirm New Password<input type="password" name="confirm" required minlength="10" maxlength="72" autocomplete="new-password" /></label>
+        <p class="error" id="pwError"></p>
+        <button class="btn btn-primary full" type="submit">Update Password</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Order details modal -->
+  <div class="modal-wrap" id="orderModal">
+    <div class="modal">
+      <button class="modal-close" data-close>&times;</button>
+      <div id="orderModalBody"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="common.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
+
